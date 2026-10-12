@@ -1,0 +1,137 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MONOCUCOS — Stories</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/style-historias.css"><style>
+.story-hero{padding:110px 7vw 90px;background:linear-gradient(135deg,#fff7e8,#e7f5f1 58%,#f1eafa);position:relative;overflow:hidden}.story-hero:after{
+  content:"";
+  position:absolute;
+  right:0;
+  top:0;
+  width:48%;
+height:100%;
+  background:url("https://raw.githubusercontent.com/MonocucosTM/Monocucos/monocucos-desarrollo-2026-10/assets/img/historias-pakik-libros.webp") center center / contain no-repeat;
+  border:0;
+border-radius:0;
+--webkit-mask-image:linear-gradient(to right,transparent 0%,black 28%),linear-gradient(to bottom,transparent 0%,black 12%,black 88%,transparent 100%);
+-webkit-mask-composite:source-in;
+mask-image:linear-gradient(to right,transparent 0%,black 28%),linear-gradient(to bottom,transparent 0%,black 12%,black 88%,transparent 100%);
+mask-composite:intersect;
+  pointer-events:none;
+}.story-hero-inner{position:relative;z-index:2;max-width:1000px}.story-hero h1{font-family:Optima,"Optima Nova","Segoe UI",sans-serif;font-size:clamp(52px,7vw,100px);font-weight:400;line-height:.98;letter-spacing:-.035em;margin:0 0 25px}.story-hero h1 em{font-style:italic;color:var(--coral-dark)}.story-hero p:not(.eyebrow){font-size:20px;color:var(--muted);max-width:480px}.stories-intro{padding:80px 7vw 35px;background:#fff}.stories-intro h2{font-size:clamp(38px,4.5vw,62px);margin-bottom:12px}.stories-intro p{font-size:18px;color:var(--muted);max-width:720px}.all-stories{padding:45px 7vw 105px;background:#fff}.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.story-card{border-radius:24px;overflow:hidden;background:var(--paper);box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s}.story-card:hover{transform:translateY(-7px);box-shadow:0 25px 60px rgba(36,35,33,.14)}.story-cover{height:285px;display:flex;align-items:flex-end;padding:25px;position:relative;overflow:hidden}.story-cover:before,.story-cover:after{content:"";position:absolute;border:4px solid rgba(255,255,255,.62);border-radius:50%;width:260px;height:180px}.story-cover:before{right:-75px;top:30px;transform:rotate(17deg)}.story-cover:after{left:-110px;bottom:-75px;transform:rotate(-20deg)}.cover-1{background:linear-gradient(145deg,#e8f4f0,#f7d9a4)}.cover-2{background:linear-gradient(145deg,#f2c95f,#ef9b72)}.cover-3{background:linear-gradient(145deg,#b6dcd7,#b7a7d7)}.cover-4{background:linear-gradient(145deg,#f2b58d,#f4e4b8)}.cover-5{background:linear-gradient(145deg,#f2d7df,#f6c96b)}.cover-6{background:linear-gradient(145deg,#a9d8d3,#f0b7a8)}.cover-7{background:linear-gradient(145deg,#d8c8e8,#f4c97c)}.cover-8{background:linear-gradient(145deg,#b9d9ed,#efb1a2)}.cover-9{background:linear-gradient(145deg,#f1d18c,#b8d9d0)}.story-number{position:relative;z-index:2;color:rgba(36,35,33,.68);font-size:11px;font-weight:800;letter-spacing:.14em}.story-body{padding:25px 25px 28px}.story-body small{font-size:9px;letter-spacing:.10em;color:var(--coral-dark);font-weight:800}.story-body h3{font-size:30px;margin:12px 0 10px}.story-body p{color:var(--muted);margin:0}.story-values{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}.story-values span{font-size:10px;padding:6px 9px;border-radius:999px;background:#fff;border:1px solid var(--line)}.story-learning{padding:105px 7vw;background:linear-gradient(115deg,#fff4dc,#f4ecf8)}.story-learning-grid{display:grid;grid-template-columns:1fr 1fr;gap:7vw;align-items:center}.story-learning h2{font-size:clamp(43px,5vw,70px)}.story-learning p{font-size:18px;color:var(--muted);max-width:650px}.story-quote{font-family:Optima,"Optima Nova","Segoe UI",sans-serif;font-size:clamp(30px,4vw,52px);line-height:1.1}.story-cta{text-align:center;padding:110px 7vw;background:#253b39;color:#fff}.story-cta .eyebrow{color:var(--yellow)}.story-cta h2{font-size:clamp(42px,6vw,76px);margin-bottom:30px}.story-cta p{color:rgba(255,255,255,.75);font-size:18px;margin-bottom:30px}@media(max-width:900px){.story-grid{grid-template-columns:1fr 1fr}.story-learning-grid{grid-template-columns:1fr}}@media(max-width:650px){.story-grid{grid-template-columns:1fr}.story-hero{padding-top:80px}.story-cover{height:245px}}
+.story-cover img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  position:absolute;
+  inset:0;
+  padding:18px;
+  box-sizing:border-box;
+  z-index:1;
+  filter:drop-shadow(0 5px 7px rgba(0,0,0,.12));
+}
+
+.cover-1,
+.cover-2,
+.cover-5{
+  background:#faf7f2;
+}
+
+.cover-1::before,
+.cover-1::after,
+.cover-2::before,
+.cover-2::after,
+.cover-5::before,
+.cover-5::after{
+  display:none;
+}
+/* Igualar las nuevas portadas a las tres primeras */
+.story-cover:has(img){
+  background:#faf7f2;
+  align-items:center;
+}
+
+.story-cover:has(img)::before,
+.story-cover:has(img)::after{
+  display:none;
+}
+</style>
+<style>
+html{scroll-behavior:smooth}img{max-width:100%;height:auto}button,a{touch-action:manipulation}@media(max-width:760px){body{overflow-x:hidden}}
+</style>
+<style>.preview-note{padding:9px 16px;text-align:center;background:#fff4d9;color:#654c28;font:600 12px "DM Sans",sans-serif;letter-spacing:.04em}.languages{display:flex;align-items:center;gap:9px}.languages a{color:inherit;text-decoration:none}.languages .language-disabled{opacity:.45;cursor:default}</style></head><body><div class="preview-note">ENGLISH STORIES REVIEW · WORK IN PROGRESS</div><header>
+  <a class="brand" href="index.html">
+    <img src="https://raw.githubusercontent.com/MonocucosTM/Monocucos/monocucos-desarrollo-2026-10/assets/img/MONOCUCOS-logo-header.png" alt="MONOCUCOS">
+  </a>
+
+  <nav>
+    <a href="stories-en-preview.html">STORIES</a>
+    <a href="characters-en-preview.html">CHARACTERS</a>
+    <a href="learning-en-preview.html">MONOCUQUEAR</a>
+    <a href="impact-en-preview.html">IMPACT</a>
+    <a href="about-en-preview.html">ABOUT US</a>
+    <a href="contact-en-preview.html">CONTACT</a>
+  </nav>
+
+  <div class="languages">
+    <a href="https://www.monocucos.com/historias.html" lang="es" aria-label="View this page in Spanish">ES</a>
+    <span class="active" aria-current="page">EN</span>
+    <span class="language-disabled" title="Coming soon" aria-disabled="true">PL</span>
+  </div>
+
+  <a class="navbtn" href="index.html#universo">ENTER</a>
+
+  <div class="mobile-menu-icon" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="mobile-menu">
+    <a href="stories-en-preview.html">STORIES</a>
+    <a href="characters-en-preview.html">CHARACTERS</a>
+    <a href="learning-en-preview.html">MONOCUQUEAR</a>
+    <a href="impact-en-preview.html">IMPACT</a>
+    <a href="about-en-preview.html">ABOUT US</a>
+    <a href="contact-en-preview.html">CONTACT</a>
+    <a class="mobile-enter" href="index.html#universo">ENTER</a>
+  </div>
+</header>
+<main><section class="story-hero"><div class="story-hero-inner"><p class="eyebrow">THE MONOCUCOS UNIVERSE</p><h1>Stories that<br><em>help us grow.</em></h1><p>Every story starts a conversation. Stories to explore, feel, ask questions, and learn.</p></div></section>
+<section class="stories-intro"><p class="eyebrow">THE STORIES</p><h2>One story, many ways to learn.</h2><p>The characters and their stories can become tools for conversation, play, imagination, and exploring emotions and values.</p></section>
+<section class="all-stories"><div class="story-grid">
+<article class="story-card"><div class="story-cover cover-1">
+  <img src="https://raw.githubusercontent.com/MonocucosTM/Monocucos/monocucos-desarrollo-2026-10/assets/img/diferencia-en-la-apariencia-portada.webp" alt="Cover of Diferencia en la Apariencia">
+ </div><div class="story-body"><small>INCLUSION · SELF-ACCEPTANCE · BELONGING</small><h3>Diferencia en la Apariencia</h3><p>Embracing diversity and supporting those who feel different.</p><div class="story-values"><span>Inclusion</span><span>Self-acceptance</span><span>Belonging</span></div></div></article>
+<article class="story-card"><div class="story-cover cover-2">
+  <img src="https://raw.githubusercontent.com/MonocucosTM/Monocucos/monocucos-desarrollo-2026-10/assets/img/super-poderes-portada.webp" alt="Cover of Súper Poderes">
+  </div><div class="story-body"><small>SELF-DISCOVERY · EMPOWERMENT · ACTION</small><h3>Súper Poderes</h3><p>Discovering unique talents and understanding that our actions can change the world.</p><div class="story-values"><span>Self-discovery</span><span>Empowerment</span><span>Action</span></div></div></article>
+<article class="story-card"><div class="story-cover cover-5">
+  <img src="https://raw.githubusercontent.com/MonocucosTM/Monocucos/monocucos-desarrollo-2026-10/assets/img/ayudando-a-mama-portada.webp" alt="Cover of Ayudando a Mamá">
+  </div><div class="story-body"><small>FAMILY · RESILIENCE · LOVE</small><h3>Ayudando a Mamá</h3><p>A funny, touching story told through a child’s eyes about a mom who seems able to do it all.</p><div class="story-values"><span>Family</span><span>Resilience</span><span>Love</span></div></div></article>
+<article class="story-card"><div class="story-cover cover-6">
+<img src="https://raw.githubusercontent.com/MonocucosTM/Monocucos/monocucos-desarrollo-2026-10/assets/img/portada cuenta.png" alt="Cover of Cuenta hasta Tres">
+</div><div class="story-body"><small>EMOTIONS · SELF-REGULATION · SELF-AWARENESS</small><h3>Cuenta hasta Tres</h3><p>A story about learning to recognize and manage our emotions.</p><div class="story-values"><span>Emotions</span><span>Self-regulation</span><span>Self-awareness</span></div></div></article>
+<article class="story-card"><div class="story-cover cover-3">
+<img src="https://raw.githubusercontent.com/MonocucosTM/Monocucos/monocucos-desarrollo-2026-10/assets/img/portada aquilla.png" alt="Cover of Aquillá">
+</div><div class="story-body"><small>ADAPTATION · DIVERSITY · CULTURE</small><h3>Aquillá</h3><p>A story about the challenges of adapting to new environments and cultural differences.</p><div class="story-values"><span>Adaptation</span><span>Diversity</span><span>Culture</span></div></div></article>
+
+<article class="story-card"><div class="story-cover cover-4">
+<img src="https://raw.githubusercontent.com/MonocucosTM/Monocucos/monocucos-desarrollo-2026-10/assets/img/portada grand love.png" alt="Cover of El Amor Habla a lo Grande">
+</div><div class="story-body"><small>FAMILY · LOVE · GENERATIONS</small><h3>El Amor Habla a lo Grande</h3><p>A story about the love between grandparents and grandchildren, and the importance of feeling loved.</p><div class="story-values"><span>Family</span><span>Love</span><span>Generations</span></div></div></article>
+<article class="story-card"><div class="story-cover cover-7"><span class="story-number">07 · MONOCUCOS STORY</span></div><div class="story-body"><small>FAMILY · SIBLINGS · CARE</small><h3>Mi Hermana Mayor</h3><p>The joy of having someone who guides, supports, and protects you.</p><div class="story-values"><span>Family</span><span>Siblings</span><span>Care</span></div></div></article>
+<article class="story-card"><div class="story-cover cover-8">
+<img src="https://raw.githubusercontent.com/MonocucosTM/Monocucos/monocucos-desarrollo-2026-10/assets/img/portada perfect pair.png" alt="Cover of Un Par Perfecto">
+</div><div class="story-body"><small>DIVERSITY · FRIENDSHIP · CONNECTION</small><h3>Un Par Perfecto</h3><p>Learning how our differences can bring us together.</p><div class="story-values"><span>Diversity</span><span>Friendship</span><span>Connection</span></div></div></article>
+<article class="story-card"><div class="story-cover cover-9"><span class="story-number">09 · MONOCUCOS STORY</span></div><div class="story-body"><small>COMMUNITY · ORIGINS · GENERATIONS</small><h3>Las Crónicas del Huevito</h3><p>The story of how MONOCUCOS began, and how a community helps the next generation grow.</p><div class="story-values"><span>Community</span><span>Origins</span><span>Generations</span></div></div></article>
+</div></section>
+<section class="story-learning"><div class="story-learning-grid"><div><p class="eyebrow">BEYOND THE BOOK</p><h2>Stories do not end when we close the book.</h2></div><div><p>The characters and their stories can become tools for conversation, play, imagination, and exploring emotions and values.</p><p class="story-quote">A story can open a door. A conversation can open a world.</p><a class="btn dark" href="index.html#aprender">DISCOVER MONOCUCOS EXPERIENCES</a></div></div></section>
+<section class="story-cta"><p class="eyebrow">MONOCUCOS</p><h2>Which story will you discover today?</h2><p>Explore a universe of characters, stories, and experiences.</p><a class="btn light" href="https://www.monocucos.com/historias.html">EXPLORE STORIES</a></section></main><footer><strong>MONOCUCOS™</strong><span>A world for everyone, where we are all one.</span><span>© 2026</span></footer>
+
+<script>
+const menuIcon = document.querySelector('.mobile-menu-icon');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+menuIcon.addEventListener('click', function () {
+  const isOpen = mobileMenu.style.display === 'flex';
+  mobileMenu.style.display = isOpen ? 'none' : 'flex';
+});
+</script>
+
+</body></html>
